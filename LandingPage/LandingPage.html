@@ -4,7 +4,66 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>SuperEasy</title>
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   </head>
-  <body></body>
+  <body>
+    <section class="home-section">
+      <nav>
+        <h1>SuperEasy</h1>
+        <div class="link-btn">
+          <button onclick="menuToggle()" class="burger-icon">
+            <div id="line1"></div>
+            <div id="line2"></div>
+            <div id="line3"></div>
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <div onclick="menuToggle()" class="links">
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#work">Work</a>
+              <a href="#clients">Clients</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="home" class="hero-content">
+        <h2>We are an agency and we do amazing stuffs</h2>
+        <p>
+          Our work speaks and thats what most of our clients love. We make amazing stuffs for
+          clients and we love to do it. Our repeat clients are the most numbered as compared to our
+          agencies. Try us, you wont be disappointed for sure.
+        </p>
+      </div>
+      <img class="slider-bullets" src="./Images/Slider Bullets.png" alt="" />
+      <img class="cursor" src="./Images/Shape.png" alt="" />
+    </section>
+
+    <section id="about" class="about-us">
+      <img src="./Images/image.png" alt="about-image" />
+      <div class="content">
+        <h1>Great products makes long lasting impressions</h1>
+        <p>
+          We understand every aspect of project and we put a great amount of time in understanding
+          the project. We talk to people understand their pain point and work towards giving them a
+          proper solution. Our process is suited and crafted to make useful and usable products.
+        </p>
+      </div>
+    </section>
+
+    <section class="video-section">
+      <h1 id="work" class="work">Our Work</h1>
+
+      <img class="video" src="./Images/video.png" alt="" />
+    </section>
+
+    <section id="clients" class="clients">
+      <h1>Our Clients</h1>
+      <img src="./Images/Logo.png" alt="" />
+    </section>
+
+    <script src="./JS/main.js"></script>
+  </body>
 </html>
